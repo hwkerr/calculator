@@ -16,10 +16,6 @@ footer {
   text-align: right;
 }
 
-.secondary-display, .oper-display {
-  color: #ccc;
-}
-
 .button-set {
   margin: 2% 5%;
 }
@@ -46,4 +42,11 @@ footer {
 .equals {
   background-color: #4285f4;
   font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+  .button-set button {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
