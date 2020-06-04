@@ -1,0 +1,49 @@
+footer {
+  text-align: center;
+  margin: 7%;
+}
+
+.header {
+  margin-top: 1rem;
+  padding: 0 5%;
+}
+
+.title {
+  padding: 0;
+}
+
+.display {
+  text-align: right;
+}
+
+.secondary-display, .oper-display {
+  color: #ccc;
+}
+
+.button-set {
+  margin: 2% 5%;
+}
+
+.button-set button {
+  font-size: 2rem;
+  border: 1px solid #f1f3f4;
+  padding: 1rem;
+  margin: 5px;
+}
+
+.digit, .decimal {
+  background-color: #f1f3f4;
+}
+
+.decimal, .oper {
+  font-weight: 500;
+}
+
+.oper, .clear {
+  background-color: #dfe1e5;
+}
+
+.equals {
+  background-color: #4285f4;
+  font-weight: 900;
+}
