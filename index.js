@@ -11,19 +11,6 @@ function handleKey(event) {
   useButton(event.key);
 }
 
-const display = document.querySelector(".output-display");
-const display2 = document.querySelector(".secondary-display");
-const displayOper = document.querySelector(".oper-display");
-function setDisplay(s) {
-  display.textContent = s;
-}
-function getDisplay() {
-  return display.textContent;
-}
-function appendDisplay(s) {
-  display.textContent += s;
-}
-
 let value = null;
 let store = null;
 let oper = null;
@@ -110,7 +97,7 @@ function clear() {
 }
 
 function updateDisplays() {
-  let displayElement = document.querySelector(".output-display");
+  let displayElement = document.querySelector(".display");
   if (value === null && store === null && oper === null)
     displayElement.textContent = "---";
   else if (!Number.isNaN(value))
@@ -119,6 +106,4 @@ function updateDisplays() {
     displayElement.textContent = "Error";
     value = 0;
   }
-  // document.querySelector(".secondary-display").textContent = store;
-  // document.querySelector(".oper-display").textContent = oper;
 }
