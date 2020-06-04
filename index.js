@@ -43,10 +43,10 @@ function useButton(btnLabel) {
       oper = btnLabel;
       break;
     case ".":
-      if (value === null) {
+      if (value === null || result === true) {
         value = "0" + btnLabel;
       }
-      else if (value > 0) {
+      else if (value >= 0) {
         value += "" + btnLabel;
       }
       break;
